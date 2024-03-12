@@ -1,0 +1,18 @@
+[
+    {
+      "title": "First Post",
+      "date": "2021-07-01T12:00:00Z",
+      "postId": "pID1",
+      "author": "author1",
+      "comments": [
+        {
+          "author": "commenter1",
+          "date": "2021-07-02T12:00:00Z",
+          "commentId": "cID1",
+          "content": "First comment"
+        }
+      ],
+      "content": "This is the first post."
+    }
+  ]
+  
