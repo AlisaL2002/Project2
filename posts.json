@@ -1,18 +1,72 @@
-[
+  [
+
     {
       "title": "First Post",
-      "date": "2021-07-01T12:00:00Z",
+      "date": "2024-03-09T12:00:00Z",
       "postId": "pID1",
-      "author": "author1",
+      "author": "Alice",
       "comments": [
         {
-          "author": "commenter1",
-          "date": "2021-07-02T12:00:00Z",
+          "author": "Bob",
+          "date": "2024-03-10T08:00:00Z",
           "commentId": "cID1",
-          "content": "First comment"
+          "content": "Great post!"
+        },
+        {
+          "author": "Charlie",
+          "date": "2024-03-11T09:30:00Z",
+          "commentId": "cID2",
+          "content": "Thanks for the insights."
         }
       ],
-      "content": "This is the first post."
+      "content": "This is the first post"
     }
+    
+ 
+    {
+        "title": "Second Post",
+        "date": "2024-03-09T12:00:00Z",
+        "postId": "pID1",
+        "author": "Millie",
+        "comments": [
+          {
+            "author": "Ann",
+            "date": "2024-03-10T08:00:00Z",
+            "commentId": "cID1",
+            "content": "Love this!"
+          },
+          {
+            "author": "Jack",
+            "date": "2024-03-11T09:30:00Z",
+            "commentId": "cID2",
+            "content": "Great insights."
+          }
+        ],
+        "content": "This is the second post"
+      }
+      
+
+      {
+        "title": "Third Post",
+        "date": "2024-03-09T12:00:00Z",
+        "postId": "pID1",
+        "author": "Max",
+        "comments": [
+          {
+            "author": "Mary",
+            "date": "2024-03-10T08:00:00Z",
+            "commentId": "cID1",
+            "content": "Great post!"
+          },
+          {
+            "author": "James",
+            "date": "2024-03-11T09:30:00Z",
+            "commentId": "cID2",
+            "content": "Great!"
+          }
+        ],
+        "content": "This is the third post"
+      }
+
   ]
   

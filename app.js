@@ -68,7 +68,6 @@ app.delete('/post/:postId', (req, res) => {
 });
 
 // Getting comment for a post
-
 app.get('/post/:postId/comments', (req, res) => {
     const { postId } = req.params;
     const posts = readPostsSync();
