@@ -54,6 +54,7 @@ app.get('/post/postId/:postId', (req, res) => {
     res.json(post || {});
   });
 
+// POST /post - Accepts a JSON object as the body of the request, this doesn't need comment values.
 // Adding a New Post
   app.post('/post', (req, res) => {
     const newPost = req.body;
@@ -63,8 +64,8 @@ app.get('/post/postId/:postId', (req, res) => {
     res.status(201).send('Post added');
   });  
 
-// Dleting a post
 // DELETE /post/:postId - Removes the post from the array
+// Dleting a post
 app.delete('/post/:postId', (req, res) => {
   let posts = readPostsSync();
   const { postId } = req.params;
@@ -73,6 +74,8 @@ app.delete('/post/:postId', (req, res) => {
   res.send('Post deleted');
 });
 
+
+// GET /post/:postId/comments - Returns all comments associated with a post
 // Getting comment for a post
 app.get('/post/:postId/comments', (req, res) => {
     const { postId } = req.params;
