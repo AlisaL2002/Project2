@@ -5,12 +5,12 @@ const path = require('path');
 
 const app = express();
 const PORT = 3000;      // localhost port number
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));  // Making sure the application is listening to the correct port
 
 app.use(bodyParser.json());
-
 const postsFilePath = path.join(__dirname, 'posts.json');
 
-// This fucntion reads postsfunction
+// This fucntion reads posts
 const readPostsSync = () => {
   try {
     const postsData = fs.readFileSync(postsFilePath);
@@ -58,7 +58,7 @@ app.get('/post/postId/:postId', (req, res) => {
   });  
 
 // Dleting a post
-// DELETE /post/:postId - Removes the post from the array.
+// DELETE /post/:postId - Removes the post from the array
 app.delete('/post/:postId', (req, res) => {
   let posts = readPostsSync();
   const { postId } = req.params;
@@ -105,4 +105,3 @@ app.get('/post/:postId/comments', (req, res) => {
       res.status(404).send('Post not found');
     }
   });
-  
