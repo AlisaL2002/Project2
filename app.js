@@ -3,9 +3,15 @@ const bodyParser = require('body-parser');
 const fs = require('fs');
 const path = require('path');
 
+
 const app = express();
 const PORT = 3000;      // localhost port number
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));  // Making sure the application is listening to the correct port
+
+app.get('/', (req, res) => {
+    res.send('Homepage'); // Displays when the llink is http://localhost:3000
+  });
+  
 
 app.use(bodyParser.json());
 const postsFilePath = path.join(__dirname, 'posts.json');
